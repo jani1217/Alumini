@@ -1,0 +1,26 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #fff;
+  height:180px;
+  font-size:1.5rem;
+}
+
+.batch-btn {
+  padding: 0.5rem;
+}
+
+input[type="text"] {
+  width: 550px;
+  height: 65px;
+  font-size: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #0e0d0d;
+  box-sizing: border-box;
+}
+
+.username{
+    font-size:2.5rem;
+}

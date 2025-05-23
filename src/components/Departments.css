@@ -1,0 +1,24 @@
+.departments {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+}
+
+.dept-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dept-grid button {
+  padding: 3rem 2rem; /* Increase padding for size */
+  font-size: 3rem;  /* Increase font size */
+  border-radius: 25px;
+  border: 2px solid gray;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.button{font-size:2rem;
+}
