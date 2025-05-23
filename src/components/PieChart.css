@@ -7,9 +7,7 @@
   width: 100%;
 }
 
-.pie-chart h4 {
-  margin-bottom: 10px;
-}
+
 
 .pie-chart {
   display: flex;
@@ -39,8 +37,8 @@
 }
 
 .dot {
-  height: 10px;
-  width: 10px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 8px;

@@ -1,24 +1,30 @@
 .departments {
-  margin: 2rem 0;
+  margin: 2rem 1rem 2rem 1rem; /* top, right, bottom, left */
   padding: 1rem;
   background: white;
   border-radius: 10px;
 }
 
+
 .dept-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 25rem; /* horizontal spacing */
+  row-gap: 150px;     /* vertical spacing */
 }
 
 .dept-grid button {
-  padding: 3rem 2rem; /* Increase padding for size */
-  font-size: 3rem;  /* Increase font size */
+    
+  width: 150%;
+  height: 200%;
+  font-size: 2.5rem;
   border-radius: 25px;
   border: 2px solid gray;
   background-color: #eee;
   cursor: pointer;
 }
 
-.button{font-size:2rem;
+
+.departments h1{
+    margin-bottom:2 rem;
 }
