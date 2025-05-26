@@ -12,12 +12,12 @@
 }
 
 input[type="text"] {
-  width: 550px;
-  height: 65px;
+  width: 850px;
+  height: 80px;
   font-size: 45px;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #0e0d0d;
+  border: 1px solid #302f2f;
   box-sizing: border-box;
 }
 

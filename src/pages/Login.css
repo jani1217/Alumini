@@ -1,0 +1,112 @@
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom right, #b3c0cb, #8a939b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.login-box {
+  background-color: #e5f0f7;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-box h2 {
+    font-weight: 750;
+  font-size: 3.1rem;
+  font-family: sans-serif;
+  margin-bottom: 7rem;
+  color: #333;
+  margin-top: -80px;
+}
+
+.login-input {
+  width: 90% !important;
+  padding: 1.2rem !important;
+  margin-bottom: 5rem !important;
+  border-radius: 8px !important;
+  border: 1px solid #ccc !important;
+  font-size: 2.1rem !important;
+  box-sizing: border-box !important;
+  background-color: white !important;
+  height: 90px !important;
+  margin-left:42px;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #b1dad8;
+  box-shadow: 0 0 5px rgba(177, 218, 216, 0.5);
+}
+
+.login-button {
+  background-color: #b1dad8;
+  padding: 1.2rem;
+  margin-left:42px;
+  width: 90%;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2.1rem;
+  margin-top: 2rem;
+  color: #333;
+  height: 90px;
+}
+
+.login-button:hover {
+  background-color: #9cc5c3;
+  transform: translateY(-1px);
+}
+
+.login-forgot {
+  margin-top: 4rem;
+  font-size: 1.7rem;
+  color: #666;
+  cursor: pointer;
+  font-family :sans-serif;
+}
+
+.login-forgot:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Media query for small screens (mobile) */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 1.5rem;
+    border-radius: 15px;
+    max-width: 350px;
+  }
+  
+  .login-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .login-input, .login-button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  
+  .login-input {
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-forgot {
+    font-size: 0.8rem;
+  }
+}
