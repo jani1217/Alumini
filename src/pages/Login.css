@@ -12,12 +12,12 @@
 .login-box {
   background-color: #e5f0f7;
   padding: 3rem 2rem;
-  border-radius: 20px;
+  border-radius: 150px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 900px;
+  max-width: 1050px;
   text-align: center;
-  min-height: 1000px;
+  min-height: 1300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,23 +25,23 @@
 
 .login-box h2 {
     font-weight: 750;
-  font-size: 3.1rem;
+  font-size: 5rem;
   font-family: sans-serif;
-  margin-bottom: 7rem;
+  margin-bottom: 12rem;
   color: #333;
-  margin-top: -80px;
+  margin-top: -50px;
 }
 
 .login-input {
   width: 90% !important;
   padding: 1.2rem !important;
-  margin-bottom: 5rem !important;
+  margin-bottom: 6rem !important;
   border-radius: 8px !important;
   border: 1px solid #ccc !important;
-  font-size: 2.1rem !important;
+  font-size: 2.5rem !important;
   box-sizing: border-box !important;
   background-color: white !important;
-  height: 90px !important;
+  height: 114px !important;
   margin-left:42px;
 }
 
@@ -60,10 +60,11 @@
   border-radius: 40px;
   font-weight: bold;
   cursor: pointer;
-  font-size: 2.1rem;
-  margin-top: 2rem;
+  font-size: 2.8rem;
+  margin-top: 3rem;
+  margin-bottom:10px;
   color: #333;
-  height: 90px;
+  height: 110px;
 }
 
 .login-button:hover {
@@ -72,8 +73,8 @@
 }
 
 .login-forgot {
-  margin-top: 4rem;
-  font-size: 1.7rem;
+  margin-top: 5rem;
+  font-size: 2.4rem;
   color: #666;
   cursor: pointer;
   font-family :sans-serif;
