@@ -1,10 +1,13 @@
-import './StatCard.css';
+import React from 'react';
+import './StatCard.css'; // Optional: if using separate styles
 
-const StatCard = ({ label, value }) => (
-  <div className="stat-card">
-    <p>{label}</p>
-    <h2>{value}</h2>
-  </div>
-);
+const StatCard = ({ title, value }) => {
+  return (
+    <div className="stat-card">
+      <div className="stat-title">{title}</div>
+      <div className="stat-value">{value}</div>
+    </div>
+  );
+};
 
 export default StatCard;

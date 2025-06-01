@@ -117,3 +117,14 @@
   background-color: #e0e0e0;
 }
 
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* StatCard styling if not in separate CSS */
+
+
+

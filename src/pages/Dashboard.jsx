@@ -13,23 +13,33 @@ const Dashboard = () => {
       <Sidebar />
       <div className="main-content">
         <Topbar />
-       <div className="charts-and-departments">
-  <div className="charts-section">
-    <div className="card"><PieChart /></div>
-    <div className="card"><BarChart /></div>
-  </div>
-  <div className="card departments-section">
-    <Departments />
-  </div>
-</div>
-<div className="volunteer-section card">
-  <h1>VOLUNTEERS / CHAPTER HEADS</h1>
-</div>
 
+        {/* Stat Cards Section */}
+        <div className="stats-grid">
+          <StatCard title="TOTAL ALUMNI" value="723" />
+          <StatCard title="EMPLOYED" value="465" />
+          <StatCard title="HIGHER STUDIES" value="142" />
+          <StatCard title="AVAILABLE" value="24" />
+        </div>
+
+        {/* Charts and Departments Section */}
+        <div className="charts-and-departments">
+          <div className="charts-section">
+            <div className="card"><PieChart /></div>
+            <div className="card"><BarChart /></div>
+          </div>
+          <div className="card departments-section">
+            <Departments />
+          </div>
+        </div>
+
+        {/* Volunteers Section */}
+        <div className="volunteer-section card">
+          <h1>VOLUNTEERS / CHAPTER HEADS</h1>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Dashboard;
-
