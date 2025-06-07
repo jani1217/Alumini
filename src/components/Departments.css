@@ -26,5 +26,6 @@
 
 
 .departments h1{
-    margin-bottom:2 rem;
+    margin-bottom:3.5rem !important;
+     font-size: 3rem !important;
 }

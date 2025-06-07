@@ -7,7 +7,9 @@
   width: 100%;
 }
 
-
+.pie-chart-container h1{
+  font-size:3rem;
+}
 
 .pie-chart {
   display: flex;

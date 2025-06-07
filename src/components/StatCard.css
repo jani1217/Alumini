@@ -9,14 +9,13 @@
 
 .stat-title {
   padding-top: 10px;
-  font-size: 2.5rem;
-  color: #555;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .stat-value {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #222;
   font-weight: bold;
 }

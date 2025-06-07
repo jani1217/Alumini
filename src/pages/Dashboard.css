@@ -96,6 +96,10 @@
   flex: 1 1 300px;
 }
 
+.volunteer-section card h1{
+ font-size: 3rem !important;
+}
+
 .departments-section {
   display: flex;
   flex-wrap: wrap;
