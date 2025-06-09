@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard';
 import AddAlumni from './pages/AddAlumini';
 import Recruiters from './pages/Recruiters';
 import Settings from './pages/Settings';
+import Report from './pages/Report';
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <Route path="/add-alumni" element={<AddAlumni />} /> {/* NEW ROUTE */}
       <Route path="/recruiters" element={<Recruiters />} />
       <Route path="/settings" element={<Settings />} />
+      <Route path="/report" element={<Report />} />
+
 
     </Routes>
   );

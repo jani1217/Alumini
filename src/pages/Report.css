@@ -1,0 +1,100 @@
+.dashboard-container {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.reports-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.report-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  height: 1600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-box h3 {
+  font-size: 3.2rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+/* White background for the data container */
+.report-box .data-container {
+  background-color: white;
+  flex: 1; /* take available height */
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  overflow-y: auto;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.scrollable ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scrollable ul li {
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.export-box .export-links {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.export-box .export-links a {
+  font-size: 1.5 rem;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.export-box .data-container.export-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  gap: 1rem;
+}
+
+.export-box .data-container.export-links a {
+  font-size: 3.5rem;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 388px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.export-box .data-container.export-links a:hover {
+  background-color: #0056b3;
+}

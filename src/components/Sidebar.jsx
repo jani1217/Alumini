@@ -16,8 +16,9 @@ const Sidebar = () => {
        <Link to="/recruiters" className="sidebar-link">
       <button>Recruiters</button>
       </Link>
-      
+      <Link to="/report" className="sidebar-link">
       <button>Reports</button>
+      </Link>
        <Link to="/settings" className="sidebar-link">
       <button>Settings</button>
       </Link>
