@@ -8,7 +8,9 @@ const Sidebar = () => {
       <Link to="/dashboard" className='sidebar-link'>
       <button>Dashboard</button>
       </Link>
+      <Link to="/allalumini" className="sidebar-link">
       <button>All Alumni's</button>
+      </Link>
 
       <Link to="/add-alumni" className="sidebar-link">
         <button>Add Alumni</button>
@@ -22,6 +24,8 @@ const Sidebar = () => {
        <Link to="/settings" className="sidebar-link">
       <button>Settings</button>
       </Link>
+
+
     </div>
   );
 };

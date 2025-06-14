@@ -111,3 +111,20 @@
     font-size: 0.8rem;
   }
 }
+
+.register-link {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  color: #444;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.register-link span {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+.register-link:hover span {
+  color: #0a66c2;
+}

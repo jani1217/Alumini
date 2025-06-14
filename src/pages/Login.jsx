@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase'; // Adjust the path if needed
 import './Login.css';
 
 function Login() {
@@ -7,14 +9,31 @@ function Login() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Optional: Add login validation here
-    if (username && password) {
-      navigate('/dashboard');
-    } else {
-      alert("Please enter valid credentials.");
+
+    if (!username || !password) {
+      alert('Please enter valid credentials.');
+      return;
     }
+
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, username, password);
+      const user = userCredential.user;
+      const token = await user.getIdToken();
+      localStorage.setItem('authToken', token);
+
+      console.log(token)
+      navigate('/dashboard');
+    } catch (error) {
+      console.error('Login error:', error.message);
+      alert('Login failed. Please check your credentials.');
+    }
+  };
+  
+
+  const goToRegister = () => {
+    navigate('/register');
   };
 
   return (
@@ -40,7 +59,10 @@ function Login() {
         <button type="button" className="login-button" onClick={handleLogin}>
           LOGIN
         </button>
-        <p className="login-forgot">Forget Password?</p>
+        <p className="login-forgot">Forgot Password?</p>
+        <p className="register-link" onClick={goToRegister}>
+          Don't have an account? <span>Register here</span>
+        </p>
       </div>
     </div>
   );

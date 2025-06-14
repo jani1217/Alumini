@@ -5,6 +5,8 @@ import AddAlumni from './pages/AddAlumini';
 import Recruiters from './pages/Recruiters';
 import Settings from './pages/Settings';
 import Report from './pages/Report';
+import AddAlumini from './pages/AddAlumini';
+import AllAlumini from './pages/AllAlumini';
 
 
 function App() {
@@ -12,11 +14,12 @@ function App() {
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/add-alumni" element={<AddAlumni />} /> {/* NEW ROUTE */}
+      <Route path="/add-alumni" element={<AddAlumni />} /> 
       <Route path="/recruiters" element={<Recruiters />} />
       <Route path="/settings" element={<Settings />} />
       <Route path="/report" element={<Report />} />
 
+      <Route path='/allalumini' element={<AllAlumini/>}/>
 
     </Routes>
   );
